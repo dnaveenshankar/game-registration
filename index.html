@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGMI - Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0d0d0d;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-out;
+        }
+
+        .container h1 {
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            color: #ff9933;
+            animation: slideInFromLeft 1s ease-out;
+        }
+
+        .button {
+            display: block;
+            width: 200px;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #ff9933;
+            color: #0d0d0d;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-weight: bold;
+            animation: slideInFromRight 1.5s ease-out;
+        }
+
+        .button:hover {
+            background-color: #cc7a00;
+            transform: translateY(-5px);
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #ff9933;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #cc7a00;
+            transform: translateY(-5px);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <center>
+        <h1>Welcome to PixelVortex Gaming</h1>
+        <a href="register.php" class="button">Register as Player</a>
+        <a href="login.php" class="button">Login as Admin</a>
+</center>
+        <div class="social-icons">
+            <a href="https://youtube.com/@pixelvortex?si=7VKyZeQ2PazY-4KK" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://discord.com/invite/G3ZxR5F4" target="_blank"><i class="fab fa-discord"></i></a>
+        </div>
+    </div>
+</body>
+</html>
